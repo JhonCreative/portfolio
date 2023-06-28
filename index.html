@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Jhon Calsina</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+   <main class="landing_pages">
+      <nav class="navbar">
+         <div class="nav_logo">
+            <p data-target="#home">
+               <img class="logo" style="width: 80px; color: currentColor;" src="./public/3.svg" alt="">
+            </p>
+         </div>
+
+         <div class="nav_links">
+            <p data-target="#about">About</p>
+            <p data-target="#works">Works</p>
+            <p data-target="#contact">Contact</p>
+         </div>
+
+         <div class="nav_cv">
+            <a href="#">CV download</a>
+            <label class="switch">
+               <i class="bi bi-brightness-high-fill" id="toggle"></i>
+               <input type="checkbox" id="slider" checked>
+               <span class="slider"></span>
+            </label>
+         </div>
+      </nav>
+
+      <header class="hero">
+         <div class="hero_social">
+            <a href=""><img class="social" src="/public/linkedin.svg" alt=""></a>
+            <a href=""><img class="social" src="/public/github.svg" alt=""></a>
+            <a href=""><img class="social" src="/public/instagram.svg" alt=""></a>
+         </div>
+         <div data-content id="home" class="home active">
+            <section class="introduction">
+               <div class="hero_info">
+                  <div class="callout">
+                     <p>It's me</p>
+                  </div>
+                  <h1 class="name">
+                     <span class="leter">J</span>
+                     <span class="leter">h</span>
+                     <span class="leter">o</span>
+                     <span class="leter">n</span>
+                     <span class="leter"><br></span>
+                     <span class="leter">K</span>
+                     <span class="leter">.</span>
+                     <span class="leter">&nbsp;</span>
+                     <span class="leter">C</span>
+                     <span class="leter">a</span>
+                     <span class="leter">l</span>
+                     <span class="leter">s</span>
+                     <span class="leter">i</span>
+                     <span class="leter">n</span>
+                     <span class="leter">a</span>
+                  </h1>
+                  <p class="subtitle">Explore the Fusion of Design and Code</p>
+                  <p class="description">Hi everyone 👋 Im Jhon 20-year-old junior frontend developer 💻 and photo editor 📷 with a passion for learning and exploring new technologies 📲.</p>
+                  <div class="hero_link">
+                     <a href="#" class="message">
+                        <div class="image">
+                           <img class="image1" src="/public/boton.svg" alt="">
+                           <img class="image2" src="/public/boton2.svg" alt="">
+                        </div>
+                        <div class="link">
+                           <p>
+                              Contact me
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="hero_my-person">
+                  <img src="./public/my-person.png" alt="my-person" style="width: 400px;">
+               </div>
+            </section>
+            <section class="article">
+               <article class="about">
+                  <div class="title">
+                     <p>Mas sobre mi</p>
+                  </div>
+                  <div class="subtitle">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti vel sit eos! Ipsum, quia sint illum nesciunt repellendus quas, facilis quisquam eaque porro, ab quibusdam libero recusandae delectus esse.</p>
+                  </div>
+               </article>
+            </section>
+            <section class="works">
+               <h2 class="title">works</h2>
+            </section>
+         </div>
+         <div data-content id="about" class="about">
+            <h2 class="title">about</h2>
+         </div>
+         <div data-content id="works" class="works">
+            <h2 class="title">works</h2>
+         </div>
+         <div data-content id="contact" class="contact">
+            <h2 class="title">Contact</h2>
+         </div>
+      </header>
+      
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
