@@ -42,3 +42,16 @@ targets.forEach(target => {
       t.classList.add('active');
    })
 })
+
+const menu_toggle = document.getElementById('menu-button');
+const navbar_pop = document.querySelector('.navbar-pop');
+
+menu_toggle.addEventListener('click', () => {
+   menu_toggle.classList.toggle('bi-x-diamond-fill');
+   navbar_pop.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav_links').forEach(n => n.addEventListener('click', () => {
+   menu_toggle.classList.remove('bi-x-diamond-fill');
+   navbar_pop.classList.remove('active');
+}))

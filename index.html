@@ -8,27 +8,37 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-   <main class="landing_pages">
+   <main class="landing_pages" id="button">
       <nav class="navbar">
          <div class="nav_logo">
             <p data-target="#home">
                <img class="logo" style="width: 80px; color: currentColor;" src="./public/3.svg" alt="">
             </p>
          </div>
-
-         <div class="nav_links">
-            <p data-target="#about">About</p>
-            <p data-target="#works">Works</p>
-            <p data-target="#contact">Contact</p>
+         <div class="navbar-pop">
+            <div class="nav_email">
+               <a href="">jhoncalsina51@gmail.com</a>
+               <i class="bi bi-envelope"></i>
+            </div>
+            <div class="nav_links">
+               <p data-target="#about">About</p>
+               <p data-target="#works">Works</p>
+               <p data-target="#contact">Contact</p>
+            </div>
+   
+            <div class="nav_cv">
+               <a href="#">CV download</a>
+               <i class="bi bi-file-earmark-arrow-down"></i>
+            </div>
          </div>
-
-         <div class="nav_cv">
-            <a href="#">CV download</a>
+         <div class="actions">
             <label class="switch">
                <i class="bi bi-brightness-high-fill" id="toggle"></i>
                <input type="checkbox" id="slider" checked>
-               <span class="slider"></span>
             </label>
+            <button class="menu-toggle">
+               <i class="bi bi-grid-fill" id="menu-button"></i>
+            </button>
          </div>
       </nav>
 
@@ -78,7 +88,7 @@
                   </div>
                </div>
                <div class="hero_my-person">
-                  <img src="./public/my-person.png" alt="my-person" style="width: 400px;">
+                  <img class="my-person" src="./public/my-person.png" alt="my-person">
                </div>
             </section>
             <section class="article">
@@ -96,7 +106,19 @@
             </section>
          </div>
          <div data-content id="about" class="about">
-            <h2 class="title">about</h2>
+            <section class="primera_section">
+               <div class="information">
+                  <p class="title">
+                     Hello! I'm <br>Jhon K. Calsina
+                  </p>
+                  <p class="info">
+                     As a student of systems engineering and a passionate frontend designer, I enjoy creating captivating and functional web experiences. My approach is based on merging visual aesthetics with technology, always seeking intuitive and pleasant solutions for users. Additionally, I love applying my design skills to create logos and visual materials that reflect a company's identity. Through my work, I aspire to provide creative and effective solutions that help businesses stand out in the digital world. I'm excited to continue learning and growing in this ever-evolving field. Welcome to my portfolio, where you can explore my projects and discover my passion for frontend design and the creation of impactful visuals for businesses!
+                  </p>
+               </div>
+               <div class="image">
+                  <img class="image_about" src="/public/about.gif" alt="">
+               </div>
+            </section>
          </div>
          <div data-content id="works" class="works">
             <h2 class="title">works</h2>
@@ -105,8 +127,10 @@
             <h2 class="title">Contact</h2>
          </div>
       </header>
-      
    </main>
+   <div class="button">
+      <a href="#button"><img src="/public/arrow-up.svg" alt=""></a>
+   </div>
    <script src="script.js"></script>
 </body>
 </html>
