@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./src/css/style.css">
    <title>Jhon Calsina</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -17,18 +17,24 @@
          </div>
          <div class="navbar-pop">
             <div class="nav_email">
-               <a href="">jhoncalsina51@gmail.com</a>
-               <i class="bi bi-envelope"></i>
+               <a href="">jhoncalsina51@gmail.com
+                  <i class="bi bi-envelope"></i>
+               </a>
             </div>
             <div class="nav_links">
                <p data-target="#about">About</p>
                <p data-target="#works">Works</p>
                <p data-target="#contact">Contact</p>
             </div>
-   
             <div class="nav_cv">
-               <a href="#">CV download</a>
-               <i class="bi bi-file-earmark-arrow-down"></i>
+               <a href="#">CV download
+                  <i class="bi bi-file-earmark-arrow-down"></i>
+               </a>
+            </div>
+            <div class="hero_social_navbar">
+               <a href=""><img class="social_navbar" src="/public/linkedin.svg" alt=""></a>
+               <a href=""><img class="social_navbar" src="/public/github.svg" alt=""></a>
+               <a href=""><img class="social_navbar" src="/public/instagram.svg" alt=""></a>
             </div>
          </div>
          <div class="actions">
@@ -92,12 +98,21 @@
                </div>
             </section>
             <section class="article">
-               <article class="about">
-                  <div class="title">
-                     <p>Mas sobre mi</p>
+               <div class="title_article">
+                  <p>More about me</p>
+               </div>
+               <div class="subtitle_article">
+                  <p>Service Offers</p>
+               </div>
+               <div class="line"></div>
+               <article class="article_personal">
+                  <div class="article_information">
+                     <div class="description_article">
+                        <p>I'm a specialized frontend developer with expertise in HTML, CSS, and JavaScript, along with experience in frameworks like Tailwind and React. I also have skills in logo design and effective collaboration in multidisciplinary teams. My focus is on creating responsive and intuitive web experiences. I'm committed to continuous learning and expanding my skills into backend development. My goal is to deliver innovative and functional digital solutions for each project.</p>
+                     </div>
                   </div>
-                  <div class="subtitle">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti vel sit eos! Ipsum, quia sint illum nesciunt repellendus quas, facilis quisquam eaque porro, ab quibusdam libero recusandae delectus esse.</p>
+                  <div class="article_image">
+                     <img src="/public/article.png" alt="" class="article_person">
                   </div>
                </article>
             </section>
@@ -112,7 +127,7 @@
                      Hello! I'm <br>Jhon K. Calsina
                   </p>
                   <p class="info">
-                     As a student of systems engineering and a passionate frontend designer, I enjoy creating captivating and functional web experiences. My approach is based on merging visual aesthetics with technology, always seeking intuitive and pleasant solutions for users. Additionally, I love applying my design skills to create logos and visual materials that reflect a company's identity. Through my work, I aspire to provide creative and effective solutions that help businesses stand out in the digital world. I'm excited to continue learning and growing in this ever-evolving field. Welcome to my portfolio, where you can explore my projects and discover my passion for frontend design and the creation of impactful visuals for businesses!
+                     As a student of systems engineering and a passionate frontend designer, I enjoy creating captivating and functional web experiences.<br>My approach is based on merging visual aesthetics with technology, always seeking intuitive and pleasant solutions for users. Additionally, I love applying my design skills to create logos and visual materials that reflect a company's identity.<br>Through my work, I aspire to provide creative and effective solutions that help businesses stand out in the digital world. I'm excited to continue learning and growing in this ever-evolving field.<br>Welcome to my portfolio, where you can explore my projects and discover my passion for frontend design and the creation of impactful visuals for businesses!
                   </p>
                </div>
                <div class="image">
@@ -131,6 +146,6 @@
    <div class="button">
       <a href="#button"><img src="/public/arrow-up.svg" alt=""></a>
    </div>
-   <script src="script.js"></script>
+   <script src="/src/js/script.js"></script>
 </body>
 </html>

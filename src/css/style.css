@@ -17,7 +17,7 @@
 [data-theme = "dark"] {
    --primary: #133e55;
    --secondary: #720d97;
-   --background: url(./public/fondo-dark.jpg);
+   --background: url(/public/fondo-dark.jpg);
    --text_title: #adb0bd;
    --text_subtitle: #b3b4b7;
    --text_info: #cbcbcb;
@@ -114,6 +114,20 @@ body{
    flex-grow: 1;
    font-size: 12px;
    gap: 6px;
+   & a{
+      position:unset;
+      padding: 5px 10px;
+      transition: all 0.2s;
+      border-radius: 5px;
+   }
+}
+.nav_email>a:hover{
+   background: var(--primary);
+   transform: rotate(-6deg) scale(1.2);
+   transition: all 0.2s;
+   font-weight: 500;
+   color: white;
+   box-shadow: 0px 10px 30px #2b2b2bad;
 }
 
 .nav_links{
@@ -122,9 +136,23 @@ body{
    justify-content: center;
    display: flex;
    flex-direction: row;
-   gap: 20px;
    cursor: pointer;
    flex-grow: 0;
+   gap: 5px;
+   & p{
+      position:unset;
+      padding: 5px 10px;
+      transition: all 0.2s;
+      border-radius: 5px;
+   }
+}
+.nav_links p:hover {
+   background: var(--primary);
+   transform: rotate(-6deg) scale(1.2);
+   transition: all 0.2s;
+   font-weight: 500;
+   color: white;
+   box-shadow: 0px 10px 30px #2b2b2bad;
 }
 .nav_cv{
    width: 100%;
@@ -134,6 +162,23 @@ body{
    flex-grow: 1;
    font-size: 12px;
    gap: 6px;
+   & a{
+      position:unset;
+      padding: 5px 10px;
+      transition: all 0.2s;
+      border-radius: 5px;
+   }
+}
+.nav_cv > a:hover{
+   background: var(--primary);
+   transform: rotate(-6deg) scale(1.2);
+   transition: all 0.2s;
+   font-weight: 500;
+   color: white;
+   box-shadow: 0px 10px 30px #2b2b2bad;
+}
+.hero_social_navbar{
+   display: none;
 }
 
 .actions{
@@ -290,6 +335,7 @@ i {
    line-height: 1.25rem;
    animation-name: float;
    animation-duration: 5.5s;
+   cursor: pointer;
 }
 
 @keyframes float {
@@ -371,7 +417,54 @@ i {
 
 .article{
    height: 80vh;
-
+   .title_article{
+      color: var(--text_title);
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -1px;
+   }
+   .line{
+      content: " ";
+      background: var(--primary);
+      height: 3px;
+      width: 30%;
+      border-radius: 12px;
+   }
+   .subtitle_article{
+      font-weight: bold;
+      color: var(--text_subtitle);
+      margin: 10px 0;
+      position: relative;;
+   }
+   .article_information{
+      width: 60%;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .description_article{
+         width: 19em;
+         text-align: center;
+         position: relative;
+         color: var(--text_info);
+         font-size: 1.1rem;
+         line-height: 1.6rem;
+         cursor: pointer;
+      }
+   }
+}
+.article_personal{
+   display: flex;
+   background: var(--glass_menu);
+   border-radius: 1rem;
+   margin-top: 30px;
+   padding: 30px 30px;
+   justify-content: space-between;
+   .article_person{
+      width: 350px;
+      filter: drop-shadow(5px 5px 10px #4f4d4daf);
+   }
 }
 
 /* ABOUT */
@@ -462,9 +555,6 @@ i {
          font-size: 19px;
          padding: 20px 0;
          justify-content: center;
-         & a{
-            display: none;
-         }
       }
       .nav_links{
          float: right;
@@ -478,8 +568,16 @@ i {
          font-size: 19px;
          padding: 20px 0;
          justify-content: center;
-         & a{
-            display: none;
+      }
+      .hero_social_navbar{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         filter: var(--icon_color);
+         gap: 20px;
+         padding-top: 7rem;
+         .social_navbar{
+            width: 17px;
          }
       }
    }
@@ -490,6 +588,9 @@ i {
    .button{
       right: 20px;
       bottom: 20px;
+   }
+   .hero_social{
+      display: none;
    }
    /* HOME RESPONSIV */
    .introduction{
@@ -527,7 +628,24 @@ i {
          }
       }
    }
-   .hero_social{
-      display: none;
+
+   /* ABOUT RESPONSIV */
+   .about{
+      .primera_section{
+         flex-direction: column;
+         width: 100%;
+         height: 100%;
+         margin: 50px 0 20px 0;
+         .information{
+            width: 100%;
+            .title{
+               text-align: center;
+            }
+            .info{
+               text-align: center;
+               width: 100%;
+            }
+         }
+      }
    }
 }
