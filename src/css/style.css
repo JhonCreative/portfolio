@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
 [data-theme = "light"] {
    --primary: #6dd2c9;
    --secondary: #e885d1;
-   --background: url(/public/fondo.jpg);
+   --background: url(/public/images/fondo.jpg);
    --text_title: #363946;
    --text_subtitle: #363946;
    --text_info: #424242;
-   --calluot: #2d2929;
-   --callout_text: #cbcbcb;
+   --calluot: #4a4c53;
+   --callout_text: #f8f8f8;
    --glass:rgba(255, 255, 255, .3);
    --glass_menu: rgba(213, 220, 221, 0.855);
    --icon_color: brightness(0) saturate(100%) invert(19%) sepia(4%) saturate(2721%) hue-rotate(192deg) brightness(89%) contrast(84%);
@@ -17,7 +19,7 @@
 [data-theme = "dark"] {
    --primary: #133e55;
    --secondary: #720d97;
-   --background: url(/public/fondo-dark.jpg);
+   --background: url(/public/images/fondo-dark.jpg);
    --text_title: #adb0bd;
    --text_subtitle: #b3b4b7;
    --text_info: #cbcbcb;
@@ -29,7 +31,6 @@
    --primary_filter: brightness(0) saturate(100%) invert(21%) sepia(45%) saturate(731%) hue-rotate(156deg) brightness(91%) contrast(97%);
    --secondary_filter: brightness(0) saturate(100%) invert(8%) sepia(78%) saturate(4753%) hue-rotate(282deg) brightness(129%) contrast(102%);
 }
-
 
 *{
    padding: 0;
@@ -232,6 +233,24 @@ i {
    .social{
       width: 18px;
       filter: var(--icon_color);
+   }
+}
+
+.flags{
+   position: absolute;
+   top: 9vh;
+   right: 4.6vh;
+   display: flex;
+   flex-direction: column;
+   font-size: 17px;
+   color: var(--text_info);
+   & p{
+      display: block;
+      transition: all 0.5s;
+      padding: 0 4px;
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Ysabeau SC', sans-serif;
    }
 }
 
@@ -523,6 +542,52 @@ i {
 
 }
 
+/*----------------------CONTACT----------------------*/
+
+form {
+   padding: 50px 55px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
+   text-align: center;
+   width: 340px;
+}
+
+.input-group{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+label {
+   color: var(--text_info);
+   font-size: 15px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+input, textarea {
+   padding: 17px 25px;
+   border-radius: 25px;
+   margin-bottom: 20px;
+   background-color: var(--primary_filter);
+   border-color: var(--secondary_filter);
+   color: var(--text_subtitle);
+   outline: none;
+}
+
+input::placeholder , textarea::placeholder {
+   color: var(--callout_text);
+}
+
+.btn {
+   font-size: 16px;
+   color: var(--text_title);
+   border: 0;
+   border-radius: 25px;
+   background-color: var(--primary);
+   cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
    body{
       padding-top: 0;
@@ -627,6 +692,14 @@ i {
             width: 270px;
          }
       }
+   }
+   /* ARTICLE RESPONSIV */
+   .article_personal{
+      flex-direction: column;
+   }
+   .article_information{
+      width: 100%;
+      margin: 0;
    }
 
    /* ABOUT RESPONSIV */

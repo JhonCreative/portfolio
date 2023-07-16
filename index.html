@@ -12,7 +12,7 @@
       <nav class="navbar">
          <div class="nav_logo">
             <p data-target="#home">
-               <img class="logo" style="width: 80px; color: currentColor;" src="./public/3.svg" alt="">
+               <img class="logo" style="width: 80px; color: currentColor;" src="./public/svg/logo.svg" alt="">
             </p>
          </div>
          <div class="navbar-pop">
@@ -22,19 +22,19 @@
                </a>
             </div>
             <div class="nav_links">
-               <p data-target="#about">About</p>
-               <p data-target="#works">Works</p>
-               <p data-target="#contact">Contact</p>
+               <p data-target="#about" data-section="navbar" data-value="about">About</p>
+               <p data-target="#works" data-section="navbar" data-value="works">Works</p>
+               <p data-target="#contact" data-section="navbar" data-value="contact">Contact</p>
             </div>
             <div class="nav_cv">
-               <a href="#">CV download
+               <a href="/public/pdf/cv-milife.pdf" target="_blank">CV download
                   <i class="bi bi-file-earmark-arrow-down"></i>
                </a>
             </div>
             <div class="hero_social_navbar">
-               <a href=""><img class="social_navbar" src="/public/linkedin.svg" alt=""></a>
-               <a href=""><img class="social_navbar" src="/public/github.svg" alt=""></a>
-               <a href=""><img class="social_navbar" src="/public/instagram.svg" alt=""></a>
+               <a href=""><img class="social_navbar" src="/public/svg/linkedin.svg" alt=""></a>
+               <a href=""><img class="social_navbar" src="/public/svg/github.svg" alt=""></a>
+               <a href=""><img class="social_navbar" src="/public/svg/instagram.svg" alt=""></a>
             </div>
          </div>
          <div class="actions">
@@ -46,13 +46,21 @@
                <i class="bi bi-grid-fill" id="menu-button"></i>
             </button>
          </div>
+         <div id="flags" class="flags">
+            <div class="flags__items" data-language="es">
+               <p class="español">es</p>
+            </div>
+            <div class="flags__items" data-language="en">
+               <p class="ingles">en</p>
+            </div>
+         </div>
       </nav>
 
       <header class="hero">
          <div class="hero_social">
-            <a href=""><img class="social" src="/public/linkedin.svg" alt=""></a>
-            <a href=""><img class="social" src="/public/github.svg" alt=""></a>
-            <a href=""><img class="social" src="/public/instagram.svg" alt=""></a>
+            <a href=""><img class="social" src="/public/svg/linkedin.svg" alt=""></a>
+            <a href=""><img class="social" src="/public/svg/github.svg" alt=""></a>
+            <a href=""><img class="social" src="/public/svg/instagram.svg" alt=""></a>
          </div>
          <div data-content id="home" class="home active">
             <section class="introduction">
@@ -77,13 +85,13 @@
                      <span class="leter">n</span>
                      <span class="leter">a</span>
                   </h1>
-                  <p class="subtitle">Explore the Fusion of Design and Code</p>
-                  <p class="description">Hi everyone 👋 Im Jhon 20-year-old junior frontend developer 💻 and photo editor 📷 with a passion for learning and exploring new technologies 📲.</p>
+                  <p class="subtitle" data-section="home" data-value="subtitle">Explore the Fusion of Design and Code</p>
+                  <p class="description" data-section="home" data-value="description">Hi everyone 👋 Im Jhon 20-year-old junior frontend developer 💻 and photo editor 📷 with a passion for learning and exploring new technologies 📲.</p>
                   <div class="hero_link">
                      <a href="#" class="message">
                         <div class="image">
-                           <img class="image1" src="/public/boton.svg" alt="">
-                           <img class="image2" src="/public/boton2.svg" alt="">
+                           <img class="image1" src="/public/svg/boton.svg" alt="">
+                           <img class="image2" src="/public/svg/boton2.svg" alt="">
                         </div>
                         <div class="link">
                            <p>
@@ -94,7 +102,7 @@
                   </div>
                </div>
                <div class="hero_my-person">
-                  <img class="my-person" src="./public/my-person.png" alt="my-person">
+                  <img class="my-person" src="./public/images/my-person.png" alt="my-person">
                </div>
             </section>
             <section class="article">
@@ -112,7 +120,7 @@
                      </div>
                   </div>
                   <div class="article_image">
-                     <img src="/public/article.png" alt="" class="article_person">
+                     <img src="/public/images/article.png" alt="" class="article_person">
                   </div>
                </article>
             </section>
@@ -131,7 +139,7 @@
                   </p>
                </div>
                <div class="image">
-                  <img class="image_about" src="/public/about.gif" alt="">
+                  <img class="image_about" src="/public/images/about.gif" alt="">
                </div>
             </section>
          </div>
@@ -140,11 +148,31 @@
          </div>
          <div data-content id="contact" class="contact">
             <h2 class="title">Contact</h2>
+            <form action="https:/formsubmit.co/jhoncalsina51@gmail.com" method="post">
+               <div class="input-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Name">
+
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email">
+
+                  <label for="Asunto">Asunto</label>
+                  <input type="text" name="asunto" id="asunto" placeholder="Asunt">
+
+                  <label for="message">Menssage</label>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                  <input class="btn" type="submit" value="Send">
+
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                  <input type="hidden" name="_captcha" value="false">
+               </div>
+            </form>
          </div>
       </header>
    </main>
    <div class="button">
-      <a href="#button"><img src="/public/arrow-up.svg" alt=""></a>
+      <a href="#button"><img src="/public/svg/arrow-up.svg" alt=""></a>
    </div>
    <script src="/src/js/script.js"></script>
 </body>

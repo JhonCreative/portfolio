@@ -1,0 +1,11 @@
+{
+   "navbar": {
+      "about" : "Acerca de",
+      "works" : "Trabajos",
+      "contact" : "Contacto"
+   },
+   "home": {
+      "subtitle" : "explora la fusión de diseño y código",
+      "description" : "Hola a todos 👋 Soy Jhon, desarrollador frontend junior 💻 y editor de fotos 📷 de 20 años, apasionado por aprender y explorar nuevas tecnologías 📲."
+   }
+}

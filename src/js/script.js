@@ -1,6 +1,6 @@
 const spans = document.querySelectorAll('.name span');
 let index = 0;
-
+// mostrar nombre en secuencia
 function mostrarSiguienteSpan() {
    if (index < spans.length) {
       spans[index].style.opacity = '1';
@@ -11,6 +11,7 @@ function mostrarSiguienteSpan() {
 
 mostrarSiguienteSpan();
 
+// cambio de tema
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 
@@ -45,7 +46,7 @@ targets.forEach(target => {
 
 const menu_toggle = document.getElementById('menu-button');
 const navbar_pop = document.querySelector('.navbar-pop');
-
+// barra de navegacion
 menu_toggle.addEventListener('click', () => {
    menu_toggle.classList.toggle('bi-x-diamond-fill');
    navbar_pop.classList.toggle('active');
@@ -55,3 +56,22 @@ document.querySelectorAll('.nav_links').forEach(n => n.addEventListener('click',
    menu_toggle.classList.remove('bi-x-diamond-fill');
    navbar_pop.classList.remove('active');
 }))
+
+// cambio de lenguajes
+const flagsElement = document.getElementById("flags");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language => {
+   const requestJson = await fetch(`/languages/${language}.json`);
+   const texts = await requestJson.json();
+
+   for(const textToChange of textsToChange) {
+      const section = textToChange.dataset.section;
+      const value = textToChange.dataset.value;
+
+      textToChange.innerHTML = texts[section][value]
+   }
+}
+flagsElement.addEventListener("click", (e) => {
+   changeLanguage(e.target.parentElement.dataset.language);
+})
