@@ -7,5 +7,10 @@
    "home": {
       "subtitle" : "explora la fusión de diseño y código",
       "description" : "Hola a todos 👋 Soy Jhon, desarrollador frontend junior 💻 y editor de fotos 📷 de 20 años, apasionado por aprender y explorar nuevas tecnologías 📲."
+   },
+   "article": {
+      "title" : "Más sobre mí",
+      "subtitle" : "Ofertas de servicio",
+      "description" : "Soy un desarrollador frontend especializado en HTML, CSS y JavaScript, con experiencia en frameworks como Tailwind y React. También tengo habilidades en diseño de logotipos y colaboración efectiva en equipos multidisciplinarios. Mi enfoque se centra en crear experiencias web responsivas e intuitivas. Estoy comprometido con el aprendizaje continuo y en expandir mis habilidades al ámbito del desarrollo backend. Mi objetivo es ofrecer soluciones digitales innovadoras y funcionales para cada proyecto."
    }
 }

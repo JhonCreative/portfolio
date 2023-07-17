@@ -7,5 +7,10 @@
    "home": {
       "subtitle" : "explore the fusion of design and code",
       "description" : "Hi everyone 👋 Im Jhon 20-year-old junior frontend developer 💻 and photo editor 📷 with a passion for learning and exploring new technologies 📲."
+   },
+   "article": {
+      "title" : "More about me",
+      "subtitle" : "Service Offers",
+      "description" : "I'm a specialized frontend developer with expertise in HTML, CSS, and JavaScript, along with experience in frameworks like Tailwind and React. I also have skills in logo design and effective collaboration in multidisciplinary teams. My focus is on creating responsive and intuitive web experiences. I'm committed to continuous learning and expanding my skills into backend development. My goal is to deliver innovative and functional digital solutions for each project."
    }
 }
