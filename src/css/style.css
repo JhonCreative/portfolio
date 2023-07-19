@@ -3,7 +3,7 @@
 [data-theme = "light"] {
    --primary: #6dd2c9;
    --secondary: #e885d1;
-   --background: url(/public/images/fondo.jpg);
+   --background: url(/public/images/fondo-alternativ.png);
    --text_title: #363946;
    --text_subtitle: #363946;
    --text_info: #424242;
@@ -19,7 +19,7 @@
 [data-theme = "dark"] {
    --primary: #133e55;
    --secondary: #720d97;
-   --background: url(/public/images/fondo-dark.jpg);
+   --background: url(/public/images/fondo-alternativ-dark.png);
    --text_title: #adb0bd;
    --text_subtitle: #b3b4b7;
    --text_info: #cbcbcb;
@@ -58,8 +58,8 @@ body{
    background: var(--glass);
    box-shadow: 0 25px 50px -12px rgba(0,0,0,1.25);
    border-radius: 0.5rem;
-   -webkit-backdrop-filter: blur(5px);
-   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(20px);
+   backdrop-filter: blur(20px);
    border: 1.5px solid var(--glass);
 }
 
