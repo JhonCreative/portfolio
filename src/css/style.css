@@ -477,8 +477,8 @@ i {
 }
 .article_personal{
    display: flex;
-   border: solid 3px var(--glass_menu);
-   border-radius: 1rem;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
    margin-top: 30px;
    padding: 30px 30px;
    justify-content: space-between;
